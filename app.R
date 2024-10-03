@@ -36,6 +36,15 @@ dp_circlize_blast <- function(test_blast1) {
 
 # Define UI
 ui <- fluidPage(
+  # Add CSS to change the background color of the page
+  tags$style(HTML("
+    body {
+      background-color: #faf6fd;  
+    }
+    .well {
+      background-color: #e1dde3;  
+    }
+  ")),
   titlePanel("BLAST Output Circos Plot Generator"),
   h4("(c) Dev Paudel, dpaudel@outlook.com"),
   p("This application allows you to upload BLAST output file in tabular format and generate a Circos plot."),
@@ -117,5 +126,5 @@ server <- function(input, output, session) {
 
 
 
-# Run the application 
+# Run the application
 shinyApp(ui = ui, server = server)
