@@ -1,2 +1,2 @@
 # BlastCircos
-Create Circos Plot from BLAST output
+Shiny App to Create Circos Plot from BLAST output
